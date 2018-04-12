@@ -294,7 +294,6 @@ GLSL.prototype.compile = function compile (arg) {
 	if (this.preprocess) {
 		if (this.preprocess instanceof Function) {
 			arg = this.preprocess(arg);
-      console.log(arg);
 		}
 		else {
 			arg = prepr(arg);
