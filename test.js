@@ -15,8 +15,15 @@ uniform mat4 mProj;
 void main()
 {
   fragTexCoord = vertTexCoord;
-  //  fragNormal = (mWorld * vec4(vertNormal, 0.0)).xyz;
-
-  gl_Position = mProj * mView * mWorld * vec4(vertPosition, 1.0);
+  fragNormal = (mWorld * vec4(vertNormal, 0.0)).xyz;
+  mProj += mProj;
+  mProj /= mProj;
+  if (fragTexCoord == vertNormal) {
+    gl_Position = mProj * mView * mWorld * vec4(vertPosition, 1.0);
+    gl_Position = gl_Position + gl_Position;
+  }else {
+    gl_Position = mProj;
+    gl_Position = mProj - mView;
+  }
 }`
 console.log(compile(src));
