@@ -1,0 +1,73 @@
+undefined
+stmtlist
+undefined
+stmt
+undefined
+decl
+undefined
+decllist
+undefined
+ident
+{ [String: 'mat4(1)']
+  visible: undefined,
+  type: 'mat4',
+  components: 
+   [ [ [Object], 0, 0, 0 ],
+     [ 0, [Object], 0, 0 ],
+     [ 0, 0, [Object], 0 ],
+     [ 0, 0, 0, [Object] ] ],
+  complexity: 12,
+  include: 'mat4',
+  optimize: true }
+undefined
+expr
+undefined
+call
+undefined
+literal
+undefined
+keyword
+undefined
+literal
+{ [String: 'mat4(2)']
+  visible: undefined,
+  type: 'mat4',
+  components: 
+   [ [ [Object], 0, 0, 0 ],
+     [ 0, [Object], 0, 0 ],
+     [ 0, 0, [Object], 0 ],
+     [ 0, 0, 0, [Object] ] ],
+  complexity: 12,
+  include: 'mat4',
+  optimize: true }
+undefined
+stmt
+undefined
+decl
+undefined
+function
+undefined
+ident
+undefined
+functionargs
+undefined
+stmtlist
+undefined
+stmt
+undefined
+expr
+undefined
+assign
+undefined
+binary
+undefined
+ident
+undefined
+ident
+undefined
+builtin
+
+var mWorld = [2,0,0,0, 0,2,0,0, 0,0,2,0, 0,0,0,2];
+function main () {
+	gl_Position = my_multiple( mProj, mView );
+};
