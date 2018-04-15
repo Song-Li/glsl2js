@@ -11,6 +11,7 @@ varying vec3 fragNormal;
 uniform mat4 mWorld;
 uniform mat4 mView;
 uniform mat4 mProj;
+uniform mat3 test;
 
 void main()
 {
