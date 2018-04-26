@@ -575,10 +575,6 @@ GLSL.prototype.transforms = {
       bigLength = attrKey + '.length';
       break;
     }
-    for (var varyKey in this.varyings){
-      bigLength = varyKey + '.length';
-      break;
-    }
 
     if (name == 'main') {
       addForLoop = `for (var bigI = 0;bigI < ${bigLength};++ bigI) { \n`;
